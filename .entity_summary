@@ -1,0 +1,11 @@
+- Veranstaltungsort (veranstaltungsort): ort_name[string/text], strasse[string/text], hausnummer[string/text], plz[string/text], stadt[string/text], land[string/text], geo_ort[geo], kapazitaet[number], notizen_ort[string/textarea]
+- Referenten (referenten): ref_vorname[string/text], ref_nachname[string/text], ref_email[string/email], ref_telefon[string/tel], ref_fachgebiet[string/text], ref_biografie[string/textarea], ref_foto[file], ref_webseite[string/url]
+- Veranstaltungen (veranstaltungen): event_titel[string/text], event_beschreibung[string/textarea], event_kategorie[lookup/select], event_status[lookup/radio], event_start[date/datetimeminute], event_ende[date/datetimeminute], event_max_teilnehmer[number], veranstaltungsort_ref[applookup/select], referenten_ref[applookup/select], event_bild[file], event_notizen[string/textarea]
+  → veranstaltungsort_ref links to app_id 69c40ebc8c550314b139b89d
+  → referenten_ref links to app_id 69c40eca8952a961b0ebc8c2
+- Teilnehmer (teilnehmer): tn_vorname[string/text], tn_nachname[string/text], tn_email[string/email], tn_telefon[string/tel], tn_ernaehrung[multiplelookup/checkbox], tn_notizen[string/textarea]
+- Anmeldungen (anmeldungen): anm_veranstaltung[applookup/select], anm_teilnehmer[applookup/select], anm_datum[date/date], anm_status[lookup/radio], anm_notizen[string/textarea]
+  → anm_veranstaltung links to app_id 69c40eca182caae214eb183f
+  → anm_teilnehmer links to app_id 69c40ecbe70eb034258a3776
+- Teilnehmer-Anmeldung (teilnehmer_anmeldung): ta_veranstaltung[applookup/select], ta_vorname[string/text], ta_nachname[string/text], ta_email[string/email], ta_telefon[string/tel], ta_ernaehrung[multiplelookup/checkbox], ta_notizen[string/textarea]
+  → ta_veranstaltung links to app_id 69c40eca182caae214eb183f
