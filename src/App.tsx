@@ -11,6 +11,7 @@ import ReferentenPage from '@/pages/ReferentenPage';
 import AnmeldungenPage from '@/pages/AnmeldungenPage';
 import VeranstaltungEinrichtenPage from '@/pages/intents/VeranstaltungEinrichtenPage';
 import TeilnehmerAnmeldenPage from '@/pages/intents/TeilnehmerAnmeldenPage';
+import AnmeldungenVerwaltenPage from '@/pages/intents/AnmeldungenVerwaltenPage';
 
 export default function App() {
   return (
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="admin" element={<AdminPage />} />
             <Route path="intents/veranstaltung-einrichten" element={<VeranstaltungEinrichtenPage />} />
             <Route path="intents/teilnehmer-anmelden" element={<TeilnehmerAnmeldenPage />} />
+            <Route path="intents/anmeldungen-verwalten" element={<AnmeldungenVerwaltenPage />} />
           </Route>
         </Routes>
       </ActionsProvider>

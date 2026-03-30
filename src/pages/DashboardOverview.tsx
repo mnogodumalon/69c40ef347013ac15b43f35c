@@ -27,6 +27,7 @@ import {
   IconChevronRight,
   IconSettings,
   IconUserPlus,
+  IconClipboardCheck,
 } from '@tabler/icons-react';
 
 function statusClass(key?: string) {
@@ -194,6 +195,16 @@ export default function DashboardOverview() {
               <p className="text-xs text-muted-foreground mt-0.5">Mehrere Teilnehmer auf einmal für ein Event anmelden</p>
             </div>
             <IconChevronRight size={16} className="text-muted-foreground shrink-0 group-hover:text-primary transition-colors" />
+          </a>
+          <a href="#/intents/anmeldungen-verwalten" className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-amber-500 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow group">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0">
+              <IconClipboardCheck size={20} className="text-amber-600" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="font-semibold text-sm text-foreground">Anmeldestatus bearbeiten</p>
+              <p className="text-xs text-muted-foreground mt-0.5">Ausstehende Anmeldungen bestätigen, ablehnen oder auf Warteliste setzen</p>
+            </div>
+            <IconChevronRight size={16} className="text-muted-foreground shrink-0 group-hover:text-amber-500 transition-colors" />
           </a>
         </div>
       </div>
