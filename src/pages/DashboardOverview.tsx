@@ -23,11 +23,6 @@ import {
   IconMapPin,
   IconMicrophone,
   IconAlertCircle,
-  IconRocket,
-  IconChevronRight,
-  IconSettings,
-  IconUserPlus,
-  IconClipboardCheck,
 } from '@tabler/icons-react';
 
 function statusClass(key?: string) {
@@ -169,46 +164,6 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
-      {/* Workflows */}
-      <div>
-        <div className="flex items-center gap-2 mb-3">
-          <IconRocket size={18} className="text-primary" />
-          <h2 className="text-base font-semibold text-foreground">Workflows</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <a href="#/intents/veranstaltung-einrichten" className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow group">
-            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-              <IconSettings size={20} className="text-primary" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm text-foreground">Veranstaltung einrichten</p>
-              <p className="text-xs text-muted-foreground mt-0.5">Ort und Referent für ein Event zuweisen</p>
-            </div>
-            <IconChevronRight size={16} className="text-muted-foreground shrink-0 group-hover:text-primary transition-colors" />
-          </a>
-          <a href="#/intents/teilnehmer-anmelden" className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow group">
-            <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-              <IconUserPlus size={20} className="text-primary" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm text-foreground">Teilnehmer anmelden</p>
-              <p className="text-xs text-muted-foreground mt-0.5">Mehrere Teilnehmer auf einmal für ein Event anmelden</p>
-            </div>
-            <IconChevronRight size={16} className="text-muted-foreground shrink-0 group-hover:text-primary transition-colors" />
-          </a>
-          <a href="#/intents/anmeldungen-verwalten" className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-amber-500 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow group">
-            <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center shrink-0">
-              <IconClipboardCheck size={20} className="text-amber-600" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm text-foreground">Anmeldestatus bearbeiten</p>
-              <p className="text-xs text-muted-foreground mt-0.5">Ausstehende Anmeldungen bestätigen, ablehnen oder auf Warteliste setzen</p>
-            </div>
-            <IconChevronRight size={16} className="text-muted-foreground shrink-0 group-hover:text-amber-500 transition-colors" />
-          </a>
-        </div>
-      </div>
-
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
